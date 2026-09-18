@@ -285,12 +285,12 @@ defineExpose({
 }
 
 .event-row + .event-row {
-  border-top: 0.0625rem solid #f1f5f9;
+  border-top: 0.0625rem solid var(--ct-surface-2);
 }
 
 .event-name {
   font-size: 0.8125rem;
-  color: #334155;
+  color: var(--ct-text-muted);
 }
 
 .sound-path-row {
@@ -310,7 +310,7 @@ defineExpose({
 
 .value-display {
   font-size: 0.75rem;
-  color: #64748b;
+  color: var(--ct-text-subtle);
   min-width: 3.5rem;
   text-align: right;
   font-variant-numeric: tabular-nums;
