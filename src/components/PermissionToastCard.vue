@@ -159,7 +159,7 @@ async function gotoTerminal() {
   width: 0.5rem;
   height: 0.5rem;
   border-radius: 50%;
-  background: #f59e0b;
+  background: var(--ct-warning);
   animation: pulse 1.2s ease-in-out infinite;
   flex-shrink: 0;
 }
@@ -172,19 +172,19 @@ async function gotoTerminal() {
 .title {
   font-size: 0.875rem;
   font-weight: 700;
-  color: #92400e;
+  color: var(--ct-warning);
   margin: 0;
 }
 
 .project {
   font-size: 0.6875rem;
-  color: #b45309;
+  color: var(--ct-warning-strong);
   opacity: 0.8;
 }
 
 .tool-block {
-  background: #fffbeb;
-  border: 0.0625rem solid #fde68a;
+  background: var(--ct-warning-soft);
+  border: 0.0625rem solid var(--ct-warning-soft);
   border-radius: 0.375rem;
   padding: 0.5rem 0.625rem;
   margin-bottom: 0.625rem;
@@ -194,8 +194,8 @@ async function gotoTerminal() {
   display: inline-block;
   font-size: 0.75rem;
   font-weight: 700;
-  color: #92400e;
-  background: #fef3c7;
+  color: var(--ct-warning);
+  background: var(--ct-warning-soft);
   border-radius: 0.25rem;
   padding: 0.0625rem 0.375rem;
   margin-bottom: 0.25rem;
@@ -203,7 +203,7 @@ async function gotoTerminal() {
 
 .tool-summary {
   font-size: 0.75rem;
-  color: #b45309;
+  color: var(--ct-warning-strong);
   font-family: monospace;
   word-break: break-all;
   margin: 0;
@@ -232,39 +232,39 @@ async function gotoTerminal() {
 }
 
 .btn-allow {
-  background: #10b981;
-  color: #fff;
+  background: var(--ct-success);
+  color: var(--ct-on-accent);
 }
 .btn-allow:hover:not(:disabled) {
-  background: #059669;
+  background: var(--ct-success);
 }
 
 .btn-deny {
-  background: #ef4444;
-  color: #fff;
+  background: var(--ct-error);
+  color: var(--ct-on-accent);
 }
 .btn-deny:hover:not(:disabled) {
-  background: #dc2626;
+  background: var(--ct-error);
 }
 
 .btn-goto {
-  background: #f8f7fb;
-  color: #b45309;
-  border: 0.0625rem solid #fde68a;
+  background: var(--ct-surface-2);
+  color: var(--ct-warning-strong);
+  border: 0.0625rem solid var(--ct-warning-soft);
 }
 .btn-goto:hover:not(:disabled) {
-  background: #fef3c7;
+  background: var(--ct-warning-soft);
 }
 
 .result {
   font-size: 0.75rem;
   font-weight: 600;
-  color: #059669;
+  color: var(--ct-success);
   text-align: center;
   padding: 0.375rem 0;
 }
 
 .result.timedout {
-  color: #b45309;
+  color: var(--ct-warning-strong);
 }
 </style>

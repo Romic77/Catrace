@@ -66,54 +66,54 @@ interface EventTheme {
 
 const EVENT_THEMES: Record<string, EventTheme> = {
   StopFailure: {
-    accent: '#EF4444',
-    title: '#991B1B',
-    body: '#B91C1C',
-    bg: '#FEE2E2',
-    lightBg: '#FECACA',
-    border: '#FECACA',
-    badgeBg: '#FEE2E2',
-    badgeFg: '#B91C1C',
+    accent: 'var(--ct-error)',
+    title: 'var(--ct-error-strong)',
+    body: 'var(--ct-error-strong)',
+    bg: 'var(--ct-error-soft)',
+    lightBg: 'var(--ct-error-soft)',
+    border: 'var(--ct-error-soft)',
+    badgeBg: 'var(--ct-error-soft)',
+    badgeFg: 'var(--ct-error-strong)',
   },
   Stop: {
-    accent: '#06B6D4',
-    title: '#0F172A',
-    body: '#475569',
-    bg: '#ECFEFF',
-    lightBg: '#CFFAFE',
-    border: '#A5F3FC',
-    badgeBg: '#CFFAFE',
-    badgeFg: '#0E7490',
+    accent: 'var(--ct-cyan)',
+    title: 'var(--ct-text)',
+    body: 'var(--ct-text-muted)',
+    bg: 'var(--ct-cyan-soft)',
+    lightBg: 'var(--ct-cyan-soft)',
+    border: 'var(--ct-cyan-soft)',
+    badgeBg: 'var(--ct-cyan-soft)',
+    badgeFg: 'var(--ct-cyan)',
   },
   Notification: {
-    accent: '#8B5CF6',
-    title: '#0F172A',
-    body: '#475569',
-    bg: '#F3E8FF',
-    lightBg: '#E9D5FF',
-    border: '#DDD6FE',
-    badgeBg: '#EDE9FE',
-    badgeFg: '#6D28D9',
+    accent: 'var(--ct-accent)',
+    title: 'var(--ct-text)',
+    body: 'var(--ct-text-muted)',
+    bg: 'var(--ct-accent-soft)',
+    lightBg: 'var(--ct-accent-soft)',
+    border: 'var(--ct-accent-soft)',
+    badgeBg: 'var(--ct-accent-soft)',
+    badgeFg: 'var(--ct-accent-hover)',
   },
   SessionStart: {
-    accent: '#10B981',
-    title: '#0F172A',
-    body: '#475569',
-    bg: '#D1FAE5',
-    lightBg: '#A7F3D0',
-    border: '#6EE7B7',
-    badgeBg: '#D1FAE5',
-    badgeFg: '#047857',
+    accent: 'var(--ct-success)',
+    title: 'var(--ct-text)',
+    body: 'var(--ct-text-muted)',
+    bg: 'var(--ct-success-soft)',
+    lightBg: 'var(--ct-success-soft)',
+    border: 'var(--ct-success)',
+    badgeBg: 'var(--ct-success-soft)',
+    badgeFg: 'var(--ct-success-strong)',
   },
   UserPromptSubmit: {
-    accent: '#6B7280',
-    title: '#0F172A',
-    body: '#475569',
-    bg: '#F3F4F6',
-    lightBg: '#E5E7EB',
-    border: '#D1D5DB',
-    badgeBg: '#F3F4F6',
-    badgeFg: '#4B5563',
+    accent: 'var(--ct-text-subtle)',
+    title: 'var(--ct-text)',
+    body: 'var(--ct-text-muted)',
+    bg: 'var(--ct-surface-2)',
+    lightBg: 'var(--ct-border)',
+    border: 'var(--ct-border)',
+    badgeBg: 'var(--ct-surface-2)',
+    badgeFg: 'var(--ct-text-muted)',
   },
 }
 
@@ -371,7 +371,7 @@ function onCardClick() {
   justify-content: center;
   background: transparent;
   border: none;
-  color: #9C8DB5;
+  color: var(--ct-text-subtle);
   cursor: pointer;
   border-radius: 0.375rem;
   padding: 0;
@@ -438,12 +438,12 @@ function onCardClick() {
 
 .project-chip {
   background: rgba(15, 23, 42, 0.06);
-  color: #334155;
+  color: var(--ct-text-muted);
   border: 0.0625rem solid rgba(15, 23, 42, 0.08);
 }
 
 .project-chip.muted {
-  color: #94a3b8;
+  color: var(--ct-text-subtle);
   font-weight: 500;
 }
 
@@ -529,7 +529,7 @@ function onCardClick() {
   cursor: pointer;
   border: none;
   background: var(--accent);
-  color: #ffffff;
+  color: var(--ct-on-accent);
   transition: all 0.2s ease;
 }
 
