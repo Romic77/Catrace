@@ -22,9 +22,20 @@ import {
   type UpdateSourceId,
 } from '../../api/tauri'
 import SettingRow from './SettingRow.vue'
+import { useTheme, type ThemeMode } from '../../composables/useTheme'
 
 const { t } = useI18n()
 const message = useMessage()
+
+const { mode: themeMode, setMode: setThemeMode } = useTheme()
+const themeOptions = computed(() => [
+  { label: t('settings.theme.system'), value: 'system' },
+  { label: t('settings.theme.light'), value: 'light' },
+  { label: t('settings.theme.dark'), value: 'dark' },
+])
+function changeTheme(v: ThemeMode) {
+  void setThemeMode(v)
+}
 
 const autostart = ref(false)
 const silentStart = ref(false)
@@ -283,6 +294,16 @@ async function handleInstallUpdate() {
         size="small"
         style="width: 10rem;"
         @update:value="changeLocale"
+      />
+    </setting-row>
+
+    <setting-row :title="t('settings.theme.title')" :desc="t('settings.theme.desc')">
+      <n-select
+        :value="themeMode"
+        :options="themeOptions"
+        size="small"
+        style="width: 10rem;"
+        @update:value="changeTheme"
       />
     </setting-row>
 
