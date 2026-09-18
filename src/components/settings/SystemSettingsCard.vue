@@ -394,8 +394,8 @@ async function handleInstallUpdate() {
             :percentage="downloadProgress"
             :height="8"
             :show-indicator="false"
-            color="#7C3AED"
-            rail-color="#EBE6F2"
+            color="var(--ct-accent)"
+            rail-color="var(--ct-accent-soft)"
           />
           <div class="download-progress-text">
             {{ downloadProgress }}%
@@ -422,13 +422,13 @@ async function handleInstallUpdate() {
 .update-banner-title {
   font-size: 0.875rem;
   font-weight: 600;
-  color: #2E1065;
+  color: var(--ct-text);
   min-width: 0;
 }
 
 .update-banner-body {
   font-size: 0.75rem;
-  color: #8B7AAB;
+  color: var(--ct-text-muted);
   margin-bottom: 0.75rem;
   white-space: pre-wrap;
   line-height: 1.5;
@@ -450,7 +450,7 @@ async function handleInstallUpdate() {
 
 .download-progress-text {
   font-size: 0.75rem;
-  color: #8B7AAB;
+  color: var(--ct-text-muted);
   font-variant-numeric: tabular-nums;
   min-width: 2.5em;
   text-align: right;
