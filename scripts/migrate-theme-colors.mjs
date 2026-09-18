@@ -23,8 +23,8 @@ const MAP = {
   '#e2e8f0': '--ct-border', '#e4e4e7': '--ct-border', '#e5e7eb': '--ct-border',
   '#d1d5db': '--ct-border', '#cbd5e1': '--ct-border', '#d4d4d8': '--ct-border', '#ececed': '--ct-border',
   // 文本
-  '#2e1065': '--ct-text', '#0f172a': '--ct-text', '#1e293b': '--ct-text', '#18181b': '--ct-text', '#24292f': '--ct-text',
-  '#8b7aab': '--ct-text-muted', '#334155': '--ct-text-muted', '#475569': '--ct-text-muted',
+  '#2e1065': '--ct-text', '#0f172a': '--ct-text', '#1e293b': '--ct-text', '#18181b': '--ct-text', '#24292f': '--ct-text', '#2a2b2e': '--ct-text',
+  '#8b7aab': '--ct-text-muted', '#334155': '--ct-text-muted', '#475569': '--ct-text-muted', '#4b4d52': '--ct-text-muted',
   '#4b5563': '--ct-text-muted', '#6b5b8a': '--ct-text-muted', '#7c7caa': '--ct-text-muted',
   '#9c8db5': '--ct-text-subtle', '#94a3b8': '--ct-text-subtle', '#64748b': '--ct-text-subtle',
   '#6b7280': '--ct-text-subtle', '#9ca3af': '--ct-text-subtle',
